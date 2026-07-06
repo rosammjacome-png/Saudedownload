@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Download</title>
+</head>
+<body>
+
+<script>
+window.onload = function () {
+    const link = document.createElement('a');
+    link.href = 'saude.csv';
+    link.download = 'saude.csv';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+};
+</script>
+
+<p>Se o download não iniciar automaticamente, <a href="saude.csv">clique aqui</a>.</p>
+
+</body>
+</html>
